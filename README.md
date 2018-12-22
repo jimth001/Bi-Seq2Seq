@@ -1,5 +1,5 @@
 # Bi-Seq2Seq
-An re-implement of "Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems"
+An implementation of "Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems"
 
 需要准备的数据：  
 './data/train.query',#原始英文语料。处理时会使用nltk分词。  
