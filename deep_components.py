@@ -35,14 +35,9 @@ class decoder(object):
         self.gru_cell=rnn.GRUCell(rnn_units)
         self.out_layer = tf.layers.Dense(self.vocab_size, name='output_layer', _reuse=tf.AUTO_REUSE)
 
-    def __call__(self, encoder_outputs,encoder_len, inputs, state):
+    def __call__(self, inputs, state):
         inputs_embedding=tf.nn.embedding_lookup(self.embedding,inputs)
         inputs_embedding=tf.expand_dims(inputs_embedding,axis=1)
-        attention_mechanism = BahdanauAttention(
-            num_units=self.rnn_units,
-            memory=encoder_outputs,
-            memory_sequence_length=encoder_len)
-        sattention_cell = AttentionWrapper(self.gru_cell, attention_mechanism)
         output,state= tf.nn.dynamic_rnn(self.gru_cell,inputs_embedding,initial_state=state,dtype=tf.float32)
         output=self.out_layer(output)
         return output,state
