@@ -1,6 +1,6 @@
-# Bi-Seq2Seq
+ # Bi-Seq2Seq
 An implementation of "Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems".  
-This code serves as a baseline of "Response Generation by Context-aware Prototype Editing"(https://arxiv.org/abs/1806.07042). 
+This code serves as a baseline of "Response Generation by Context-aware Prototype Editing" (https://arxiv.org/abs/1806.07042). 
 
 
 ## Code:
