@@ -5,12 +5,12 @@ This code serves as a baseline of "Response Generation by Context-aware Prototyp
 
 ## Code:
 
-run preprocess() to generate some pickle files for training. (./data/train.pkl, ./data/test.pkl, ./data/val.pkl) 
-run train_onehotkey(batch_size=32) for training. Models are saved under "./model".  
-run generate_batches(model_path='./model/epoch.10.model',batch_size=32) to generate results(./output/result). 
+Run preprocess() to generate some pickle files for training. (./data/train.pkl, ./data/test.pkl, ./data/val.pkl) 
+Run train_onehotkey(batch_size=32) for training. Models are saved under "./model".  
+Run generate_batches(model_path='./model/epoch.10.model',batch_size=32) to generate results(./output/result). 
 
 
-## data preparing：  
+## Data preparing：  
 
 './data/train.query',(raw querys, line by line)
 './data/train.reply',  
