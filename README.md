@@ -1,13 +1,11 @@
 # Bi-Seq2Seq
-An implementation of "Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems".
-
+An implementation of "Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems".  
 This code serves as a baseline of "Response Generation by Context-aware Prototype Editing"(https://arxiv.org/abs/1806.07042). 
 
 
 ## Code:
 
-Run preprocess() to generate some pickle files for training. (./data/train.pkl, ./data/test.pkl, ./data/val.pkl) 
-
+Run preprocess() to generate some pickle files for training. (./data/train.pkl, ./data/test.pkl, ./data/val.pkl)    
 Run train_onehotkey(batch_size=32) for training. Models are saved under "./model".  
 Run generate_batches(model_path='./model/epoch.10.model',batch_size=32) to generate results(./output/result). 
 
@@ -22,8 +20,7 @@ Run generate_batches(model_path='./model/epoch.10.model',batch_size=32) to gener
 './data/val.target',  
 './data/test.query',  
 './data/test.reply',  
-'./data/test.target', (If you don't have a target file, you can let query as the target to run preprocess())
-
+'./data/test.target', (If you don't have a target file, you can let query as the target to run preprocess())  
 './data/embedding' (fasttext's format)  
 
 
