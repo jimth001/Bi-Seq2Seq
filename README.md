@@ -3,14 +3,14 @@ An implementation of "Two are Better than One: An Ensemble of Retrieval- and Gen
 This code serves as a baseline of "Response Generation by Context-aware Prototype Editing"(https://arxiv.org/abs/1806.07042). 
 
 
-##Code:
+## Code:
 
 run preprocess() to generate some pickle files for training. (./data/train.pkl, ./data/test.pkl, ./data/val.pkl) 
 run train_onehotkey(batch_size=32) for training. Models are saved under "./model".  
 run generate_batches(model_path='./model/epoch.10.model',batch_size=32) to generate results(./output/result). 
 
 
-##data preparing：  
+## data preparing：  
 
 './data/train.query',(raw querys, line by line)
 './data/train.reply',  
@@ -24,6 +24,6 @@ run generate_batches(model_path='./model/epoch.10.model',batch_size=32) to gener
 './data/embedding' (fasttext's format)  
 
 
-##Dataset
+## Dataset
 
 You can contact the authors of “Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems” (https://arxiv.org/abs/1610.07149) if you are trying to reproduce this work. You can also get a dataset to run this code at https://github.com/MarkWuNLP/ResponseEdit.
